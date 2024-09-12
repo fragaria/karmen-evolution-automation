@@ -4,13 +4,12 @@ logger = logging.getLogger('settings')
 
 
 SLICER_APP_EXECUTABLE='/path/to/PrusaSlicerApplication'
-SLICER_CONFIG_FILE='config.ini'
+SLICER_CONFIG_FILE='my-prusaslicer-config.ini'
 KARMEN_API_KEY='YOU CAN CREATE API KEY IN KARMEN'
 KARMEN_GROUP_ID='YOUR GROUP ID FROM KARMEN'
 
 KARMEN_API_URL='https://backend.next.karmen.tech/api/2'
 
-SLICER_CONFIG_FILE='my-prusaslicer-config.ini'
 GCODE_OUTPUT_FILE='my-tmp-gcode-file.gcode'
 
 
