@@ -39,7 +39,7 @@ upload_url = f'{KARMEN_API_URL}/groups/{KARMEN_GROUP_ID}/api/files/local'
 response = requests.post(
     upload_url,
     headers={'Accept': 'application/json', 'x-api-key': KARMEN_API_KEY},
-    files={'file': open(GCODE_OUTPUT_FILE)})
+    files={'file': (inputfile + '.gcode', open(GCODE_OUTPUT_FILE, 'rb'))})
 if response.status_code == 201:
     print_msg(f'File {GCODE_OUTPUT_FILE} uploaded.')
 
