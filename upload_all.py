@@ -21,7 +21,7 @@ def upload_all_func():
                     print_msg(f'  - Skip - file is already uploaded.')
                 else:
                     print_msg(f'  - Going to upload file to Karmen...')
-                    upload_file_to_karmen(file_path.stem, file_path)
+                    upload_file_to_karmen(file_path.name, file_path)
                     open(f'{file_path}.UPLOADED', 'a').close()
 
 
